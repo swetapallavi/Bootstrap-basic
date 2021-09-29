@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- This is the google fonts CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <!-- This is the Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- This is my own CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container-fluid">
+                <nav class="navbar navbar-light">
+                    <div class="container">
+                      <a class="navbar-brand" href="index.html">
+                        <img src="images/logo-dans-meat-yogurt.svg" alt="Dan's Meat Yogurt Company Logo">
+                      </a>
+                    </div>
+                  </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Drop-down Button -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 float-end">
+
+                        <li class="nav-item dropdown btn btn-outline-light me-4" style="width: 120px;">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Flavours
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Ham</a></li>
+                                <li><a class="dropdown-item" href="#">Beef</a></li>
+                                <li><a class="dropdown-item" href="#">Chicken</a></li>
+                                <li><a class="dropdown-item" href="#">Fish</a></li>
+                            </ul>                     
+                        </li>
+                        <!-- Normal Button -->
+                        <li class="nav-item btn btn-outline-light" style="width: 120px;">
+                            <a class="nav-link text-white" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-12 col-md-7 text-center text-md-left">
+                    <h1 class="display-3 text-white drop-shadow">Thick & Creamy</h1>
+                    <p class="lead">With real meat chunks</p>
+                    <a class="btn btn-outline-light btn-lg mt-4 px-5 py-3 mb-5 mb-md-0" href="#" role="button">Pricing</a>
+                </div>
+                <div class="col-12 col-md-5">
+                    <img src="images/hero1.png" alt="Dan's meat yogurt" class="img-fluid">
+                </div>
+            </div>
+        </div> 
+
+        <!-- Founder's message -->
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <img src="images/headshot-dan.jpg" alt="Daniel Walter Scott - Meat Yogurt Founder" class="img-fluid border rounded-start border-0">
+            </div>
+            <div class="col-12 col-md-8 bg-white p-5 d-flex align-items-center border border-dark rounded-end">
+                <section>
+                    <h2>Message from our founder</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eaque, perferendis, hic iste quibusdam doloribus repellat tempore porro asperiores explicabo earum. Corrupti autem soluta quam iste fugit est ad hic. Cum at suscipit corrupti harum ipsa fugiat consequatur, error quos tempora magni? Eum, fuga alias esse sapiente deleniti minima sit repellendus numquam quod! Maiores quasi quibusdam voluptatum dolor. Labore, maxime!</p>
+                </section>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div id="carouselExampleControls" class="carousel slide d-none d-md-block carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1500">
+                    <img src="images/yogurt-1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1500">
+                    <img src="images/yogurt-2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1500">
+                    <img src="images/yogurt-3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Cards -->
+        <div class="card-group gap-5 my-5">
+            <div class="card shadow" style="width: 18rem;">
+                <img src="images/product1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://www.swiggy.com" class="btn btn-primary stretched-link">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card shadow" style="width: 18rem;">
+                <img src="images/product2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://www.swiggy.com" class="btn btn-primary stretched-link">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card shadow" style="width: 18rem;">
+                <img src="images/product3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://www.swiggy.com" class="btn btn-primary stretched-link">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- This is the Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
